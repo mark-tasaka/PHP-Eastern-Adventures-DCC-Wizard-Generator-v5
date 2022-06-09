@@ -38,6 +38,8 @@
     include 'php/nameSelect.php';
     include 'php/gender.php';
     include 'php/languages.php';
+    include 'php/familiar.php';
+    include 'php/patron.php';
     
     
             
@@ -353,6 +355,54 @@
        $tradegoods = $occupationArray[4];
 
        $tradeGoodsAddition = tradeGoodsAddition($profession, $trainedWeapon);
+
+       
+       $patronArray = array();
+
+       if(isset($_POST["thePatron"]))
+       {
+           $patronNumber = $_POST["thePatron"];
+
+           $patronInt = intval($patronNumber);
+
+           $patronArray = getPatron($patronInt);
+
+           $patronName = $patronArray[0];
+           $patronDescription = $patronArray[1];
+   
+       }
+
+       $familiarForm = array();
+        
+        //Familiar
+        if(isset($_POST['theFamiliar']) && $_POST['theFamiliar'] == 1) 
+        {
+            $familiarForm = getFamiliar($alignment);
+
+            $familiarFormAnimal = $familiarForm[0];
+            $familiarFormDescription = $familiarForm[1];
+
+            $familiarTypeName = getFamiliarType($alignment);
+            $familiarType = 'Type: ' . $familiarTypeName;
+
+            $familiarHitPoints = getFamiliarHitPoints($familiarTypeName);
+            $familiarHitDice = getFamiliarHitDice($familiarTypeName); 
+
+            $familiarHp = 'HP: ' . $familiarHitPoints . ' ' . $familiarHitDice;
+
+            $familiarPersonalityShort = familiarPersonality();
+            $familiarPersonality = 'Personality: ' . $familiarPersonalityShort;
+
+        }
+        else
+        {
+            $familiarFormAnimal = "";
+            $familiarFormDescription = "";
+            $familiarType = "";
+            $familiarHp = "";
+            $familiarPersonality = "";
+
+        }
 
 
 
@@ -683,6 +733,27 @@
                 echo $attackBonus;
            ?>
            </span>
+
+           <span id="patronName">
+            <?php
+                echo $patronName;
+            ?>
+        </span>
+
+        <span id="patronDescription">
+            <?php
+                echo  $patronDescription;
+            ?>
+        </span>
+        
+       
+
+           <span id="familiarForm">
+            <?php
+                echo  $familiarFormAnimal . '   ' . $familiarFormDescription . '<br/><br/>' . $familiarType . '<br/><br/>' . $familiarHp . '<br/><br/>' . $familiarPersonality;
+            ?>
+        </span>
+
 
 
 

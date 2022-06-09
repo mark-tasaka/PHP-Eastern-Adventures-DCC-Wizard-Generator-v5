@@ -196,7 +196,7 @@ body{
 
 #wealth{
     position:absolute;
-    top: 855px;
+    top: 875px;
     left: 680px;
     font-size: 0.6em;
     width: 230px;
@@ -485,8 +485,8 @@ body{
 
 #languages{
     position:absolute;
-    top: 750px;
-    left:  405px;
+    top: 1000px;
+    left:  680px;
     font-size: 0.8em;
     width: 240px;
 }
@@ -531,6 +531,33 @@ body{
     left:  50px;
 	font-size: 0.5em;
 }
+
+
+#familiarForm{
+    position:absolute;
+    top: 900px;
+    left: 410px;
+    font-size: 0.65em;
+    width: 250px;
+}
+
+
+#patronName{
+    position:absolute;
+    top: 755px;
+    left: 410px;
+    font-size: 1em;
+}
+
+
+#patronDescription{
+    position:absolute;
+    top: 780px;
+    left: 410px;
+    font-size: 0.7em;
+    width: 250px;
+}
+
 
 
 #backstab{
