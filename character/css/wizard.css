@@ -46,7 +46,7 @@ body{
 #alignment{
     position:absolute;
     top: 105px;
-    left: 367px;
+    left: 377px;
 	font-size: 0.85em;
 }
 
@@ -71,7 +71,7 @@ body{
 #title{
     position:absolute;
     top: 163px;
-    left: 275px;
+    left: 295px;
 	font-size: 0.85em;
 }
 
@@ -79,7 +79,7 @@ body{
 #profession{
     position:absolute;
     top: 163px;
-    left: 415px;
+    left: 450px;
 	font-size: 0.85em;
 }
 

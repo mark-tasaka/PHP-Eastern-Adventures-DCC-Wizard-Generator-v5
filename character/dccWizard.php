@@ -242,7 +242,7 @@
 
         $generationMessage = generationMesssage ($abilityScoreGen);
     */
-    
+    /*
         if(isset($_POST["theArmour"]))
         {
             $armour = $_POST["theArmour"];
@@ -257,9 +257,9 @@
 
        $totalAcDefense = $armourACBonus;
        $totalAcCheckPen = $armourCheckPen;
-       $speedPenality = $armourSpeedPen;
+       $speedPenality = $armourSpeedPen;*/
 
-       $speed = 30 - $armourSpeedPen;
+       $speed = 30;
 
 
        $criticalDie = criticalDie($level);
@@ -277,7 +277,7 @@
        
        $baseArmourClass = getAC($agilityMod, $luckMod, $luckySign[0]);
 
-       $armourClass = $baseArmourClass + $totalAcDefense;
+       $armourClass = $baseArmourClass;
 
        $ref = savingThrowReflex($level);
        $ref += $agilityMod;
@@ -295,7 +295,7 @@
        $will += $willLuckSign;
 
        $speed = getSpeed($luckMod, $luckySign[0]);
-       $speed -= $speedPenality;
+     //  $speed -= $speedPenality;
 
        $initiative = getInit($agilityMod, $luckMod, $luckySign[0]);
        $initiative += $level; 
@@ -685,44 +685,6 @@
            </span>
 
 
-              
-       <span id="armourName">
-           <?php
-                echo $armourName;
-           ?>
-        </span>
-
-        <span id="armourACBonus">
-            <?php
-                echo '+' . $totalAcDefense;
-            ?>
-        </span>
-
-        
-        <span id="armourACCheckPen">
-            <?php
-                echo $totalAcCheckPen;
-            ?>
-        </span>
-        
-        <span id="armourACSpeedPen">
-            <?php
-            if($speedPenality == 0)
-            {
-                echo "-";
-            }
-            else
-            {
-                echo "-" . $speedPenality;
-            }
-            ?>
-        </span>
-
-        <span id="fumbleDie">
-            <?php
-                echo $armourFumbleDie;
-            ?>
-        </span>
 
         <span id="criticalDieTable">
             <?php
