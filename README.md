@@ -4,6 +4,10 @@ The Dungeon Crawl Classics Eastern Adventures Redux Wizard [Shugenja] Character 
 ------------
 
 
+Update 1.03: 2022-06-09
+
+Updates to dccWizard.php, wizard.css and languages.png. Two new files added: familiar.php and patron.php.
+
 
 Update 1.02: 2022-06-08
 
