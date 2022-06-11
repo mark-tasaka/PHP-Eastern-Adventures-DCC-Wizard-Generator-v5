@@ -535,10 +535,10 @@ body{
 
 #familiarForm{
     position:absolute;
-    top: 900px;
+    top: 875px;
     left: 410px;
     font-size: 0.65em;
-    width: 250px;
+    width: 245px;
 }
 
 
@@ -650,3 +650,17 @@ body{
     left: 505px;
     font-size: 0.8em;
 }
+
+
+#knownSpells{
+    position:absolute;
+    top: 640px;
+    left: 555px;
+}
+
+#maxSpellLevel{
+    position:absolute;
+    top: 675px;
+    left: 555px;
+}
+

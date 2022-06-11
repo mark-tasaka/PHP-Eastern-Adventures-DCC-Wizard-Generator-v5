@@ -355,7 +355,9 @@
        $tradegoods = $occupationArray[4];
 
        $tradeGoodsAddition = tradeGoodsAddition($profession, $trainedWeapon);
-
+       
+       $knownSpells = knownSpells($level);
+       $maxSpellLevel = maxSpellLevel($level);
        
        $patronArray = array();
 
@@ -608,6 +610,19 @@
        <span id="gender">
            <?php
            echo $genderName;
+           ?>
+       </span>
+       
+              
+       <span id="knownSpells">
+           <?php
+           echo $knownSpells;
+           ?>
+       </span>
+       
+       <span id="maxSpellLevel">
+           <?php
+           echo $maxSpellLevel;
            ?>
        </span>
        
