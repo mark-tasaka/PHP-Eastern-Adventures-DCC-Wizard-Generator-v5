@@ -453,17 +453,17 @@ body{
     font-size: 0.9em;
 }
 
-#threatRange{
+#spellCheck{
     position:absolute;
     top: 227px;
-    left: 550px;
+    left: 600px;
     font-size: 0.9em;
 }
 
 #attackBonus{
     position:absolute;
     top: 227px;
-    left: 450px;
+    left: 470px;
     font-size: 0.9em;
 }
 

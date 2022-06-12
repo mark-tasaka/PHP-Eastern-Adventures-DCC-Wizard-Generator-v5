@@ -300,7 +300,7 @@
      //  $speed -= $speedPenality;
 
        $initiative = getInit($agilityMod, $luckMod, $luckySign[0]);
-       $initiative += $level; 
+      //$initiative += $level; 
 
 
        //Hit Points
@@ -778,7 +778,7 @@
             ?>
         </span>
         
-        <span id="threatRange">
+        <span id="spellCheck">
             <?php
                 $spellCheck = getModSign($spellCheck);
                 echo $spellCheck;
