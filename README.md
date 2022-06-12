@@ -3,6 +3,18 @@ The Dungeon Crawl Classics Eastern Adventures Redux Wizard [Shugenja] Character 
 
 ------------
 
+A live version of the Dungeon Crawl Classics Wizard [Shugenja] Character Generator Version 5 is available at:
+
+https://www.tasaka-games.com/dcc_ea/more/classes/wizard/
+
+
+-------------
+
+
+Update 1.06: 2022-06-12
+
+A link to the live version of the DCC Wizard Version 5 Character Generator has been added to the readme file.
+
 
 Update 1.05: 2022-06-11
 
